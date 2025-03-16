@@ -4,7 +4,12 @@ import { Button } from "react-bootstrap";
 export const COLORS = ["red", "blue", "green"];
 const DEFAULT_COLOR_INDEX = 0;
 
+<<<<<<< HEAD
 function ChangeColor({colorIndex, setColorIndex}: {colorIndex: number, setColorIndex: (n: number) => void}): React.JSX.Element {
+=======
+function ChangeColor(): React.JSX.Element {
+    const [colorIndex, setColorIndex] = useState<number>(DEFAULT_COLOR_INDEX);
+>>>>>>> origin/task-forms
     return (
         <Button
             onClick={() => {
@@ -16,14 +21,22 @@ function ChangeColor({colorIndex, setColorIndex}: {colorIndex: number, setColorI
     );
 }
 
+<<<<<<< HEAD
 function ColorPreview({colorIndex}: {colorIndex: number}): React.JSX.Element {
+=======
+function ColorPreview(): React.JSX.Element {
+>>>>>>> origin/task-forms
     return (
         <div
             data-testid="colored-box"
             style={{
                 width: "50px",
                 height: "50px",
+<<<<<<< HEAD
                 backgroundColor: COLORS[colorIndex],
+=======
+                backgroundColor: COLORS[DEFAULT_COLOR_INDEX],
+>>>>>>> origin/task-forms
                 display: "inline-block",
                 verticalAlign: "bottom",
                 marginLeft: "5px",
@@ -33,6 +46,7 @@ function ColorPreview({colorIndex}: {colorIndex: number}): React.JSX.Element {
 }
 
 export function ColoredBox(): React.JSX.Element {
+<<<<<<< HEAD
     const [colorIndex, setColorIndex] = useState<number>(DEFAULT_COLOR_INDEX);
 
     return (
@@ -42,6 +56,15 @@ export function ColoredBox(): React.JSX.Element {
             <div>
                 <ChangeColor colorIndex={colorIndex} setColorIndex={setColorIndex}></ChangeColor>
                 <ColorPreview colorIndex={colorIndex}></ColorPreview>
+=======
+    return (
+        <div>
+            <h3>Colored Box</h3>
+            <span>The current color is: {COLORS[DEFAULT_COLOR_INDEX]}</span>
+            <div>
+                <ChangeColor></ChangeColor>
+                <ColorPreview></ColorPreview>
+>>>>>>> origin/task-forms
             </div>
         </div>
     );
