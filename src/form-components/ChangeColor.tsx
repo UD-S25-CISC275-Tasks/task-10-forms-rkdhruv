@@ -49,7 +49,7 @@ export function ChangeColor(): React.JSX.Element {
             padding: "20px",
             marginTop: "10px",
             display: "inline-block",
-            color: ["yellow", "pink", "orange"].includes(selectedColor) ? "black" : "white"
+            color: "black"
             }}
         >
             {"You picked "}{selectedColor}
