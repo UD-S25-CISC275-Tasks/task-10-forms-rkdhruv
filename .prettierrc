@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "experimentalTernaries": true,
     "tabWidth": 4
 =======
@@ -23,4 +24,8 @@
     "experimentalTernaries": true,
     "tabWidth": 4
 >>>>>>> origin/task-forms
+=======
+    "experimentalTernaries": true,
+    "tabWidth": 4
+>>>>>>> main
 }
